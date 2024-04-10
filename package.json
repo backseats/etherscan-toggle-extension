@@ -1,14 +1,11 @@
 {
-  "name": "cr-chrome-extension",
-  "version": "1.0.0",
-  "description": "",
+  "name": "etherscan-toggle",
+  "version": "0.0.1",
+  "description": "toggles between various flavors of etherscan",
   "scripts": {
-    "build": "browserify src/index.js -o bundle.js"
+    "build": "browserify src/index.js -o src/bundle.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "browserify": "^17.0.0"
-  }
+  "author": "Backseats",
+  "license": "MIT"
 }
