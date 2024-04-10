@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Etherscan Toggle ",
+  "version": "0.0.1",
+  "description": "Lets you toggle through Etherscans",
+  "permissions": ["activeTab", "background"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {},
+  "host_permissions": [
+    "*://*.etherscan.io/*",
+    "*://*.basescan.org/*",
+    "*://*.polygonscan.com/*",
+    "*://*.arbiscan.io/*",
+    "*://*.bscscan.org/*",
+    "*://*.blastscan.io/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://etherscan.io/*",
+        "https://sepolia.etherscan.io/*",
+        "https://holesky.etherscan.io/*",
+        "https://optimistic.etherscan.io/*",
+        "https://basescan.org/*",
+        "https://sepolia.basescan.org/*",
+        "https://polygonscan.com/*",
+        "https://mumbai.polygonscan.com/*",
+        "https://arbiscan.io/*",
+        "https://bscscan.com/*",
+        "https://blastscan.io/*"
+      ],
+      "js": ["bundle.js"]
+    }
+  ]
+}

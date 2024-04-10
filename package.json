@@ -1,0 +1,14 @@
+{
+  "name": "cr-chrome-extension",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "browserify src/index.js -o bundle.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^17.0.0"
+  }
+}
